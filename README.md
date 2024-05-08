@@ -22,4 +22,13 @@ Untuk percobaan pertama, akan dicoba *port* yang diubah adalah *port* untuk serv
 
 ![image](https://github.com/adhan-857/tutorial-1/assets/119088782/c6e5f62a-1eda-45a0-9895-83160d5c63ba)<br>
 ![image](https://github.com/adhan-857/tutorial-1/assets/119088782/387f196d-017c-4925-904b-0ba089dd2c30)<br>
-Sedangkan jika kita hanya mengganti *port* pada *client*, maka *port* pada client dan server berbeda dan akan menyebabkan *error* pada *client*. Hal ini karena tidak ada koneksi yang bisa dilakukan oleh *client* pada *websocket connection* yang telah ditetapkan. Sehingga program akan mengalami c*rash* seperti pada gambar.
+Sedangkan jika kita hanya mengganti *port* pada *client*, maka *port* pada client dan server berbeda sehingga akan menyebabkan *error* pada *client*. Hal ini karena tidak ada koneksi yang bisa dilakukan oleh *client* pada *websocket connection* yang telah ditetapkan. Sehingga program akan mengalami c*rash* seperti pada gambar.
+<br>
+<br>
+
+**2.3.**
+![image](https://github.com/adhan-857/tutorial-1/assets/119088782/49cdcc45-ca9a-4638-ae29-3c43738afd55)<br>
+![image](https://github.com/adhan-857/tutorial-1/assets/119088782/9ec502cc-4ed5-4baa-9fc6-10462fff5f3c)<br>
+![image](https://github.com/adhan-857/tutorial-1/assets/119088782/857899d2-743c-4b10-b492-8efe37d6bd17)<br>
+![image](https://github.com/adhan-857/tutorial-1/assets/119088782/cc57cc87-d8bf-4731-a830-03cbfe852ff8)<br>
+Pada gambar, terlihat bahwa bahwa pesan yang di-*broadcast* juga diperlihatkan IP dan PORT dari pengirimnya. Hal ini dapat dilakukan dengan mengubah `bcast_tx.send(text.into())?;` pada `server.rs` menjadi `bcast_tx.send(format!("{addr} : {text}"))?;` sehingga informasi addr yang berisi IP dan PORT pengirim juga dikirimkan dalam isi pesan *broadcast*.
