@@ -26,7 +26,7 @@ Sedangkan jika kita hanya mengganti *port* pada *client*, maka *port* pada clien
 <br>
 <br>
 
-**2.3.**
+**2.3. Small changes. Add some information to client**
 ![image](https://github.com/adhan-857/tutorial-1/assets/119088782/49cdcc45-ca9a-4638-ae29-3c43738afd55)<br>
 ![image](https://github.com/adhan-857/tutorial-1/assets/119088782/9ec502cc-4ed5-4baa-9fc6-10462fff5f3c)<br>
 ![image](https://github.com/adhan-857/tutorial-1/assets/119088782/857899d2-743c-4b10-b492-8efe37d6bd17)<br>
